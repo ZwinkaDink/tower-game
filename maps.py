@@ -3,19 +3,14 @@ import pygame
 size = WIDTH, Height = (1024, 764)
 screen = pygame.display.set_mode(size)
 
+#Images to load
 grass_tile_1 = pygame.image.load("sprites/maptiles/grass_tile_1.png")
 sand_tile = pygame.image.load("sprites/maptiles/sand_tile.png")
-
-
-#28 stright water
-#29 bottom cap
-#30 top cap
 w_ns = pygame.image.load("sprites/maptiles/watertiles/28.png")
 w_s_cap = pygame.image.load("sprites/maptiles/watertiles/29.png")
 w_n_cap = pygame.image.load("sprites/maptiles/watertiles/30.png")
 
 def map_1():
-
 #Colomn 1
     screen.blit(grass_tile_1, [0, 0])
     screen.blit(sand_tile, [0, 64])
@@ -97,8 +92,8 @@ def map_1():
     screen.blit(w_ns, [256, 320])
     screen.blit(w_ns, [256, 384])
     screen.blit(w_ns, [256, 448])
-    screen.blit(w_ns, [256, 512])
-    screen.blit(w_s_cap, [256, 576])
+    screen.blit(w_s_cap, [256, 512])
+    screen.blit(grass_tile_1, [256, 576])
     screen.blit(sand_tile, [256, 640])
     screen.blit(grass_tile_1, [256, 704])
     screen.blit(grass_tile_1, [256, 768])
