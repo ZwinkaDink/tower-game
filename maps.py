@@ -251,15 +251,38 @@ def map_1():
     screen.blit(grass_tile_1, [768, 960])
     screen.blit(grass_tile_1, [768, 1024])
 #Colomn 14
-
+    screen.blit(grass_tile_1, [832, 0])
+    screen.blit(sand_tile, [832, 64])
+    screen.blit(grass_tile_1, [832, 128])
+    screen.blit(grass_tile_1, [832, 192])
+    screen.blit(grass_tile_1, [832, 256])
+    screen.blit(grass_tile_1, [832, 320])
+    screen.blit(grass_tile_1, [832, 384])
+    screen.blit(grass_tile_1, [832, 448])
+    screen.blit(grass_tile_1, [832, 512])
+    screen.blit(grass_tile_1, [832, 576])
+    screen.blit(grass_tile_1, [832, 640])
+    screen.blit(grass_tile_1, [832, 704])
+    screen.blit(grass_tile_1, [832, 768])
+    screen.blit(grass_tile_1, [832, 832])
+    screen.blit(grass_tile_1, [832, 896])
+    screen.blit(grass_tile_1, [832, 960])
+    screen.blit(grass_tile_1, [832, 1024])
 #Colomn 15
-
-#Colomn 16
-
-#Colomn 17
-
-#Colomn 18
-
-#Colomn 19
-
-#Colomn 20
+    screen.blit(grass_tile_1, [896, 0])
+    screen.blit(sand_tile, [896, 64])
+    screen.blit(grass_tile_1, [896, 128])
+    screen.blit(grass_tile_1, [896, 192])
+    screen.blit(grass_tile_1, [896, 256])
+    screen.blit(grass_tile_1, [896, 320])
+    screen.blit(grass_tile_1, [896, 384])
+    screen.blit(grass_tile_1, [896, 448])
+    screen.blit(grass_tile_1, [896, 512])
+    screen.blit(grass_tile_1, [896, 576])
+    screen.blit(grass_tile_1, [896, 640])
+    screen.blit(grass_tile_1, [896, 704])
+    screen.blit(grass_tile_1, [896, 768])
+    screen.blit(grass_tile_1, [896, 832])
+    screen.blit(grass_tile_1, [896, 896])
+    screen.blit(grass_tile_1, [896, 960])
+    screen.blit(grass_tile_1, [896, 1024])
