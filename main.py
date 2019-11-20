@@ -19,14 +19,14 @@ dead = False
 FPS = 15
 FPSCLOCK = pygame.time.Clock()
 
+# Define some colors
+WHITE = (255, 255, 255, 0)
+GREEN = (0, 255, 0, 65)
+
 gridwidth = 64
 gridhight = 64
 gridmargin = 0
 gridsize = (gridwidth, gridhight)
-
-# Define some colors
-WHITE = (255, 255, 255, 0)
-GREEN = (0, 255, 0, 100)
 
     # --- Create grid of numbers
     # Create an empty list
@@ -41,13 +41,7 @@ for row in range(17):
             # Add a the number zero to the current row
         grid[row].append(0)
 
-
-
-
-
 #Main Loop
-
-
 
 while True:
     for event in pygame.event.get():
@@ -74,8 +68,7 @@ while True:
             pygame.gfxdraw.box(screen,
                               [(gridmargin + gridwidth) * column + gridmargin,
                               (gridmargin + gridhight) * row + gridmargin,
-                              gridwidth,
-                              gridhight], color)
+                              gridwidth, gridhight], color)
  
     # Limit to 60 frames per second
     FPSCLOCK.tick(FPS)

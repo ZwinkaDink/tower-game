@@ -11,7 +11,7 @@ def t1dmgtower():
 def t1magictower():
     pass
 
-def t1defencetower():
+def t1debufftower():
     pass
 
 def t1bufftower():
