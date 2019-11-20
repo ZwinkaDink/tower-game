@@ -6,7 +6,7 @@ import enemys
 
 #Main game init and screen Res setup
 pygame.init()
-size = WIDTH, Height = (960, 766)
+size = WIDTH, Height = (960, 704)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Zwink's Tower Defence")
 mainicon = pygame.image.load("icons/medieval-tower.png")
