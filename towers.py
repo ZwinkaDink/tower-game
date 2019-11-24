@@ -5,7 +5,9 @@ size = WIDTH, Height = (1024, 764)
 screen = pygame.display.set_mode(size)
 
 
+class basetowerstats():
 
+    pass
 
 
 

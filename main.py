@@ -21,7 +21,8 @@ t1atktowers.set_colorkey((255,255,255)) # Turns anything in the background that 
 
 
 #Global Vars
-
+LEFT = 1
+RIGHT = 3
 FPS = 15
 FPSCLOCK = pygame.time.Clock()
 
@@ -63,14 +64,21 @@ while True:
 
     maps.map_1()
     if event.type == pygame.MOUSEBUTTONDOWN:
+            print ("Left = 1 Right = 3 button clicked: " , event.button)
             # User clicks the mouse. Get the position
             pos = pygame.mouse.get_pos()
             # Change the x/y screen coordinates to grid coordinates
             column = pos[0] // (gridwidth + gridmargin)
             row = pos[1] // (gridhight + gridmargin)
             # Set that location to one
-            grid[row][column] = 1
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT:
+                grid[row][column] = 1
+            elif event.type == pygame.MOUSEBUTTONDOWN and event.button == RIGHT:
+                grid[row][column] = 0
+
             print("Click ", pos, "Grid coordinates: ", row, column)
+            
+           
 
     for row in range(17):
         for column in range(15):
