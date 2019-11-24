@@ -6,6 +6,7 @@ screen = pygame.display.set_mode(size)
 #Images to load
 grass_tile_1 = pygame.image.load("sprites/maptiles/grass_tile_1.png")
 sand_tile = pygame.image.load("sprites/maptiles/sand_tile.png")
+
 w_ns = pygame.image.load("sprites/maptiles/watertiles/28.png")
 w_s_cap = pygame.image.load("sprites/maptiles/watertiles/29.png")
 w_n_cap = pygame.image.load("sprites/maptiles/watertiles/30.png")

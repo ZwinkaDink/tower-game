@@ -6,13 +6,19 @@ import enemys
 
 #Main game init and screen Res setup
 pygame.init()
-size = WIDTH, Height = (960, 766)
+size = WIDTH, Height = (960, 704)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Zwink's Tower Defence")
 mainicon = pygame.image.load("icons/medieval-tower.png")
 pygame.display.set_icon(mainicon)
 
 dead = False
+
+#code needed to turn the background of the image alpha on and set it transparent 
+t1atktowers = pygame.image.load("sprites/atktowers/t1atktower/t1atktower.png").convert()
+t1atktowers.set_colorkey((255,255,255)) # Turns anything in the background that is white(255,255,255)
+#end of image manipulation 
+
 
 #Global Vars
 
@@ -22,6 +28,12 @@ FPSCLOCK = pygame.time.Clock()
 # Define some colors
 WHITE = (255, 255, 255, 0)
 GREEN = (0, 255, 0, 65)
+RED = (255, 0, 0, 65)
+
+def redrawGameWindow():
+   
+    pass
+
 
 gridwidth = 64
 gridhight = 64
@@ -62,15 +74,19 @@ while True:
 
     for row in range(17):
         for column in range(15):
-            color = WHITE
+            #color = WHITE
             if grid[row][column] == 1:
-                color = GREEN
-            pygame.gfxdraw.box(screen,
-                              [(gridmargin + gridwidth) * column + gridmargin,
-                              (gridmargin + gridhight) * row + gridmargin,
-                              gridwidth, gridhight], color)
+                screen.blit(t1atktowers,[(gridmargin + gridwidth) * column + gridmargin,
+                             (gridmargin + gridhight) * row + gridmargin,
+                             gridwidth, gridhight])
+           #      color = GREEN
+           #pygame.gfxdraw.box(screen,
+           #                   [(gridmargin + gridwidth) * column + gridmargin,
+           #                  (gridmargin + gridhight) * row + gridmargin,
+           #                  gridwidth, gridhight], color)
+             
  
-    # Limit to 60 frames per second
+    # Limit frames per second
     FPSCLOCK.tick(FPS)
     
     # Go ahead and update the screen with what we've drawn.
