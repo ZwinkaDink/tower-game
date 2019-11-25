@@ -1,4 +1,4 @@
-import pygame
+import pygame as pygame
 import pygame.gfxdraw
 import maps
 import towers
@@ -72,9 +72,9 @@ while True:
             row = pos[1] // (gridhight + gridmargin)
             # Set that location to one
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT:
-                grid[row][column] = 1
+                grid[row][column] = 1 # Left click that will place the image/ sprite
             elif event.type == pygame.MOUSEBUTTONDOWN and event.button == RIGHT:
-                grid[row][column] = 0
+                grid[row][column] = 0 # Right click that will remove the image/ sprite
 
             print("Click ", pos, "Grid coordinates: ", row, column)
             
